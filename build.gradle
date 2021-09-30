@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext.kotlin_version = "1.5.10"
+    ext.nav_version = "2.3.5"
+    ext.glideVersion = '4.11.0'
+    ext.retrofitVersion = '2.9.0'
+    ext.hiltVersion = '2.38.1'
+    ext.greenRobotVersion = '3.2.0'
+    ext.preference_version = '1.1.1'
+    ext.realmGradleVersion = '10.6.0'
+    ext.anko_version='0.10.8'
+
+    repositories {
+        google()
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+        classpath "io.realm:realm-gradle-plugin:$realmGradleVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+
+        mavenCentral()
+        maven { url 'https://maven.testfairy.com' }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    hiltAndroidXVersion = '1.0.0-alpha02'
+}

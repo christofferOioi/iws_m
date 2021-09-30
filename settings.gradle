@@ -1,0 +1,2 @@
+rootProject.name = "iws_m"
+include ':app'
