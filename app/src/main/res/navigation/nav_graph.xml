@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_orders">
+
+    <fragment
+        android:id="@+id/fragment_orders"
+        android:name="com.intermercato.iws_m.ui.orders.FragmentOrders"
+        android:label="@string/orders"
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/action_fragment_orders_to_fragment_active_order"
+            app:destination="@id/fragment_active_order"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_active_order"
+        android:name="com.intermercato.iws_m.ui.activeorder.FragmentActiveOrder"
+        android:label="{orderName}">
+        <action
+            android:id="@+id/action_fragment_active_order_to_fragment_weighing"
+            app:destination="@id/fragment_weighing"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <argument
+            android:name="orderName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_weighing"
+        android:name="com.intermercato.iws_m.ui.weighing.FragmentWeighing"
+        android:label="@string/weighing"
+        tools:layout="@layout/fragment_weighing">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <argument
+            android:name="orderName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentOrdersHistory"
+        android:name="com.intermercato.iws_m.ui.ordershistory.FragmentOrdersHistory"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_orders_history" />
+
+    <fragment
+        android:id="@+id/setupControlBoxBle"
+        android:name="com.intermercato.iws_m.ui.setupcontrolbox.SetupControlBoxBle"
+        android:label="Kontrollbox"
+        tools:layout="@layout/fragment_setup_controlbox_ble" />
+    <fragment
+        android:id="@+id/settingsOperationFragment"
+        android:name="com.intermercato.iws_m.ui.SettingsOperationFragment"
+        android:label="SettingsOperationFragment" />
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.intermercato.iws_m.ui.FragmentSettings"
+        android:label="settings" />
+</navigation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ComponentResettableTotalWeight">
+        <attr name="resettable" format="boolean" />
+        <attr name="showAlertDialogBeforeReset" format="boolean" />
+        <attr name="componentColor" format="enum">
+            <enum name="white" value="0"/>
+            <enum name="intermercato_blue" value="1"/>
+            <enum name="grey" value="2"/>
+        </attr>
+        <attr name="displaySize" format="enum">
+            <enum name="normal" value="24" />
+            <enum name="large" value="32" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ComponentProgressBar">
+        <attr name="showTextProgress" format="boolean"/>
+        <attr name="animateProgress" format="boolean"/>
+        <attr name="direction" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTotalBankWeight" />
+
+    <TextView
+        android:id="@+id/txtTotalBankWeight"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/bar_chart_bg_staple"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="500" />
+
+    <TextView
+        android:id="@+id/bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/grey_light_bg"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/arrowIcon"
+        app:layout_constraintStart_toStartOf="@+id/arrowIcon"
+        app:layout_constraintTop_toBottomOf="@id/arrowIcon"
+        tools:text="testing" />
+    <!-- android:tint="@color/bar_chart_bg_staple"-->
+    <View
+        android:id="@+id/bottomPlate"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@color/bar_chart_bg_staple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--android:background="@color/blue"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/showWeightHolder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#20D8D7D7"
+        app:layout_constraintBottom_toTopOf="@+id/bottomPlate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topGuide">
+
+        <TextView
+            android:id="@+id/tvNumberOfRows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="1dp"
+            android:background="#40FFFFFF"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="xxx"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/bgPlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:minHeight="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/activePlate"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:background="@color/grey_light_bg"
+            app:layout_constraintBottom_toTopOf="@+id/bgPlate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

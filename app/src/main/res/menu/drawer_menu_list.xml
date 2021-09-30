@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragment_orders"
+            android:icon="@drawable/ic_baseline_format_list_numbered_24"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/fragmentOrdersHistory"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/history" />
+
+    </group>
+
+    <item android:title="@string/iws_settings">
+        <menu>
+            <item
+                android:id="@+id/setupControlBoxBle"
+                android:icon="@drawable/ic_baseline_settings_bluetooth_24"
+                android:title="Anslut till combox" />
+            <item
+                android:id="@+id/nav_para_manually"
+                android:icon="@drawable/ic_baseline_link_24"
+                android:title="Para manuellt" />
+
+            <item
+                android:id="@+id/nav_para_qr"
+                android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+                android:title="Para med qr" />
+
+            <item
+                android:id="@+id/settingsOperationFragment"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Operatörsläge" />
+
+            <item
+                android:id="@+id/nav_scale_info"
+                android:icon="@drawable/ic_baseline_perm_device_information_24"
+                android:title="Våginformation" />
+        </menu>
+
+
+    </item>
+</menu>

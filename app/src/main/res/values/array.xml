@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="settings_setup_lang_array">
+        <item>Svenska</item>
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Nederlands</item>
+        <item>Francais</item>
+        <item>Italiano</item>
+        <item>Espanol</item>
+        <item>Suomi</item>
+        <item>Eesti</item>
+        <item>Slovensko</item>
+        <item>Portuguese</item>
+    </string-array>
+    <string-array name="settings_setup_lang_values">
+        <item>sv</item>
+        <item>en</item>
+        <item>de</item>
+        <item>nl</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>es</item>
+        <item>fi</item>
+        <item>et</item>
+        <item>sk</item>
+        <item>pt</item>
+    </string-array>
+
+    <string-array name="settings_setup_numberOfCopies_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="settings_setup_numberOfCopies_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="settings_setup_operationMode_scaleParts_array">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="settings_setup_operationMode_scaleParts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="settings_setup_operationMode_array">
+        <item>Static</item>
+        <item>Normal</item>
+        <item>Semi automatic</item>
+        <item>Full automatic</item>
+        <item>Container</item>
+    </string-array>
+
+
+    <string-array name="settings_setup_operationMode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="settings_setup_operationMode_masUnit_array">
+        <item>kg</item>
+        <item>lb</item>
+        <item>US t</item>
+    </string-array>
+
+    <string-array name="settings_setup_operationMode_masUnit_values">
+        <item>kg</item>
+        <item>lb</item>
+        <item>us t</item>
+    </string-array>
+
+    <string-array name="settings_setup_factory_sceneMode_array">
+        <item>Standard</item>
+        <item>Factory</item>
+    </string-array>
+
+    <string-array name="settings_setup_factory_sceneMode_values">
+        <item>Standard</item>
+        <item>Factory</item>
+    </string-array>
+
+    <string-array name="settings_setup_factory_signalType_array">
+        <item>Buzzer</item>
+        <item>Signal tower</item>
+    </string-array>
+
+    <string-array name="settings_setup_factory_signalType_values">
+        <item>Buzzer</item>
+        <item>Signal tower</item>
+    </string-array>
+
+    <string-array name="short_months">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string-array name="long_months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="settings_instrument_wifi_securitymodes_array">
+        <item>WEP</item>
+        <item>WPA+WPA2</item>
+    </string-array>
+
+    <string-array name="settings_battery_array_list">
+        <item>3,6 V</item>
+        <item>3,6 V (timed)</item>
+        <item>7,2 V</item>
+    </string-array>
+    <string-array name="settings_battery_array_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="emailSecurityArray">
+        <item>SSL</item>
+        <item>TLS</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="emailSecurityValues">
+        <item>ssl</item>
+        <item>tls</item>
+        <item>none</item>
+    </string-array>
+
+    <string-array name="settings_containermode_array">
+        <item>off</item>
+        <item>1 slot</item>
+        <item>2 slots</item>
+        <item>3 slots</item>
+    </string-array>
+
+    <string-array name="settings_containermode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="trip_text_size_entries">
+        <item>normal</item>
+        <item>large</item>
+    </string-array>
+
+    <string-array name="trip_text_size_values">
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="intel_ble_settings_setup_operationMode_array">
+        <item>Static</item>
+        <item>Semi automatic</item>
+        <item>Full automatic</item>
+    </string-array>
+    <string-array name="intel_ble_settings_setup_operationMode_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/automaticRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnUndo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/btn_orange"
+        android:contentDescription="TODO"
+        android:onClick="buttonClick"
+        android:src="@drawable/ic_undo_black_24dp"
+        android:text="@string/txt_undo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_txt_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/btn_orange"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_add_black_24dp"
+        android:text="@string/txt_add"
+        android:onClick="buttonClick"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_txt_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/btn_orange"
+        android:contentDescription="TODO"
+        android:onClick="buttonClick"
+        android:src="@drawable/ic_close_black_24dp"
+        android:text="@string/txt_back"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_txt_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnTare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/btn_orange"
+        android:contentDescription="TODO"
+        android:onClick="buttonClick"
+        android:src="@drawable/ic_linear_scale_black_24dp"
+        android:text="@string/txt_tare"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_txt_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnSubtract"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/standard_button_selector"
+        android:onClick="buttonClick"
+        android:src="@drawable/ic_remove_black_24dp"
+        android:text="@string/txt_subtract_weighing"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_txt_size"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

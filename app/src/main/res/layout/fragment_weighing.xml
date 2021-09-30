@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:background="@color/cream_white"
+    tools:context=".ui.weighing.FragmentWeighing">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topRow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dark_blue"
+        android:padding="0dp"
+        app:layout_constraintBottom_toTopOf="@id/topGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/cream_white"
+            app:layout_constraintBottom_toTopOf="@+id/progressTare"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Init"/>
+
+        <TextView
+            android:id="@+id/tvRssiValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/cream_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="-15 rssi"/>
+
+        <TextView
+            android:id="@+id/tvWorkMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/cream_white"
+            app:layout_constraintBottom_toTopOf="@+id/progressTare"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Semi automatic"/>
+
+        <ProgressBar
+            android:id="@+id/progressTare"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:max="100"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/orange"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <com.intermercato.iws_m.components.ResetableTotalWeight
+        android:id="@+id/componentResettableTotalWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        app:componentColor="intermercato_blue"
+        app:resettable="true"
+        app:displaySize="large"
+        app:showAlertDialogBeforeReset = "false"
+        app:layout_constraintTop_toBottomOf="@+id/topGuide"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/weightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/liveWeight"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="64sp"
+        app:autoSizeMinTextSize="32sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/weightGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1800kg" />
+
+    <com.intermercato.iws_m.components.DisplaySessionWeights
+        android:id="@+id/displaySessionWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/topGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.intermercato.iws_m.components.ProgressBarWithTextProgress
+        android:id="@+id/componentProgressBarWithTextProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        app:direction="vertical"
+        app:animateProgress="true"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuide"
+        app:layout_constraintTop_toBottomOf="@id/topGuide"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bankRecyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:minHeight="200dp"
+        android:maxHeight="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomGuide"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotalWeight"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/dark_blue"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/cream_white"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="26sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankRecyclerview"
+        tools:text="50600kg" />
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/orange"
+        android:text="AVSLUTA VÄGNING"
+        android:textColor="@color/cream_white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalWeight"
+        tools:text="AVSLUTA VÄGNING"/>
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange"
+        android:text="@string/txt_message_wifi_status_down"
+        android:textColor="@color/blue"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/liveWeight"
+        app:layout_constraintTop_toTopOf="@+id/topGuide" />
+</androidx.constraintlayout.widget.ConstraintLayout>

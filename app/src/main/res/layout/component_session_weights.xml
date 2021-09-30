@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtBrutto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="brutto" />
+
+    <TextView
+        android:id="@+id/txtContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/txtNetto"
+        app:layout_constraintStart_toEndOf="@+id/txtBrutto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="container" />
+
+    <TextView
+        android:id="@+id/txtNetto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="netto" />
+
+    <TextView
+        android:id="@+id/txtCountChamber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/txtNetto"
+        app:layout_constraintEnd_toEndOf="@+id/txtNetto"
+        app:layout_constraintStart_toStartOf="@+id/txtNetto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

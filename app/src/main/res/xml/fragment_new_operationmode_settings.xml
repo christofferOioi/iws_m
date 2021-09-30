@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Scale parameters">
+        <androidx.preference.ListPreference
+            android:key="setOperationModeKey"
+            android:defaultValue="0"
+            android:entries="@array/intel_ble_settings_setup_operationMode_array"
+            android:entryValues="@array/intel_ble_settings_setup_operationMode_values"
+            android:icon="@null"
+            android:title="@string/title_settings_operation_mode_name" />
+
+        <androidx.preference.ListPreference
+            android:key="setMassUnitKey"
+            android:defaultValue="kg"
+            android:entries="@array/settings_setup_operationMode_masUnit_array"
+            android:entryValues="@array/settings_setup_operationMode_masUnit_values"
+            android:icon="@null"
+            android:title="@string/txt_masUnit" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setStableLimitKey"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:title="@string/txt_stableLimit" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setMinWeightKey"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/txt_minWeight" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setPlayTimeKey"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/txt_playTime" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setDelayTimeKey"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/txt_delay" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setMaxWeightKey"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/txt_maxWeight" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Container Settings">
+        <androidx.preference.ListPreference
+            android:key="setContainerMode"
+            android:defaultValue="0"
+            android:entries="@array/settings_containermode_array"
+            android:entryValues="@array/settings_containermode_values"
+            android:icon="@null"
+            android:title="Container mode" />
+
+        <androidx.preference.EditTextPreference
+            android:key="setContainerMinWeight"
+            android:capitalize="words"
+            android:defaultValue="0"
+            android:icon="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Minimum net weight" />
+    </PreferenceCategory>
+
+  <!--  <PreferenceCategory android:title="Category Two">
+        <android.support.v7.preference.ListPreference
+            android:entries="@array/pref_unit_options"
+            android:entryValues="@array/pref_unit_values"
+            android:icon="@drawable/ic_send_white_24dp"
+            android:key="pref_key_unit"
+            android:title="Unit" />
+
+        <android.support.v7.preference.Preference
+            android:icon="@drawable/ic_signal_wifi_off_black_24dp"
+            android:title="www.google.com">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.google.com/" />
+        </android.support.v7.preference.Preference>
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

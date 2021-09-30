@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">iws_m</string>
+    <string name="orders">Orders</string>
+    <string name="history">Historik</string>
+    <string name="active_order">Aktivorder</string>
+    <string name="weighing">Vägning</string>
+    <string name="iws_settings">iws inställningar</string>
+    <string name="txt_find_controlbox">Hitta kontrollbox</string>
+    <string name="ble_not_supported">Bluetooth Le stöds ej</string>
+    <string name="ble_connection_device">Setup bluetooth</string>
+    <string name="ble_select_device">Använd Iws controlbox</string>
+    <string name="find_controlbox">Hitta controlbox</string>
+    <string name="txt_positive_button_title_ok">Ok</string>
+    <string name="txt_negative_button_title_abort">Avbryt</string>
+
+    <string name="txt_loading_parames">Parameters received</string>
+    <string name="txt_fetching_params">Fetching parameters..</string>
+
+    <string name="pref_key_zipcode" translatable="false">pref_key_zipcode</string>
+    <string name="pref_key_unit" translatable="false">pref_key_unit</string>
+
+    <string name="workmode">arbetsläge</string>
+    <string name="massunit">viktenhet</string>
+    <string name="stablelimit">stable limit</string>
+    <string name="minweight">min weight</string>
+    <string name="playtime">play time</string>
+    <string name="delaytime">delay time</string>
+    <string name="maxweight">maxvikt</string>
+    <string name="minnetweight">minsta netto vikt</string>
+    <string name="correctinparam">korrektions-paramater</string>
+    <string name="scaleparts">skaldelar parts</string>
+    <string name="resettable_total_weight">Resettable total weight</string>
+    <string name="reset_total_weight">Reset total weight</string>
+    <string name="txt_containermode">Container</string>
+    <string name="txt_weightModeNormal">Normal</string>
+    <string name="api_error">Error on api request"</string>
+    <string name="api_success">Success</string>
+    <string name="txtMessageAsTitle">Meddelande</string>
+</resources>

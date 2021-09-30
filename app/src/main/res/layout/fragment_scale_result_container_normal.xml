@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/green_margin">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/txt_undo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/btn_orange"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/btn_txt_size"
+        android:src="@drawable/ic_undo_black_24dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/txt_add"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:enabled="true"
+        android:background="@color/btn_orange"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/btn_txt_size"
+        android:src="@drawable/ic_add_black_24dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/txt_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="actionBack"
+        android:background="@color/btn_orange"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/btn_txt_size"
+        android:src="@drawable/ic_close_black_24dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/txt_tare"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="actionTare"
+        android:background="@color/btn_orange"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/btn_txt_size"
+        android:src="@drawable/ic_linear_scale_black_24dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+
+
+</RelativeLayout>

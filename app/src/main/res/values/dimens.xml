@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- With and height for UtilsButtonDialogFragment -->
+    <dimen name="utils_button_dialog_fragment_width">340dp</dimen>
+    <dimen name="utils_button_dialog_fragment_height">340dp</dimen>
+</resources>
